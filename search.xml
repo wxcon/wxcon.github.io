@@ -20,4 +20,36 @@
         <tag>随笔</tag>
       </tags>
   </entry>
+  <entry>
+    <title>查询ES数据</title>
+    <url>/2021/11/18/%E6%9F%A5%E8%AF%A2ES%E6%95%B0%E6%8D%AE/</url>
+    <content><![CDATA[<p>以前都是用kibana查询ES数据的，但是环境没有了，只能用CURL查询了，记录下查询的操作：<br>对应IP已混淆</p>
+<p>1.查看版本</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl  -XGET &#x27;http://IP:9200&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>2.查看集群状态 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl -XGET &#x27;http://IP:9200/_cluster/state?pretty&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>3.查看所有索引信息 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl -XGET &#x27;http://IP:9200/_cat/indices?pretty&amp;v&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>4.查询某个index下的所有type </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">curl -XGET &#x27;http://IP:9200/index/_mapping?pretty=trye</span><br></pre></td></tr></table></figure>
+
+
+
+<p>直接在浏览器界面查询也可以,更方便: </p>
+<p>1.查看版本 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://IP:9200</span><br></pre></td></tr></table></figure>
+
+<p>2.查看集群状态 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://IP:9200/_cat/health?v</span><br></pre></td></tr></table></figure>
+
+<p>3.查看所有索引信息 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://IP:9200/_cat/indices?v</span><br></pre></td></tr></table></figure>
+
+<p>4.查询某个index下的所有type</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://IP:9200/index/_mapping?pretty=true</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
 </search>
