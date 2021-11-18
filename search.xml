@@ -51,5 +51,8 @@
 <p>4.查询某个index下的所有type</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://IP:9200/index/_mapping?pretty=true</span><br></pre></td></tr></table></figure>
 ]]></content>
+      <tags>
+        <tag>ES</tag>
+      </tags>
   </entry>
 </search>
