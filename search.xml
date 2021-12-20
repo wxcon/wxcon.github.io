@@ -82,6 +82,8 @@
 
 <p>4.查询某个index下的所有type</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://IP:9200/index/_mapping?pretty=true</span><br></pre></td></tr></table></figure>
+<p>5.查询某个index下的某个字段 </p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">http://IP:9200/index/_search?q=abcd:efgh </span><br></pre></td></tr></table></figure>
 ]]></content>
       <tags>
         <tag>ES</tag>
@@ -106,6 +108,16 @@
 ]]></content>
       <tags>
         <tag>投机</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>想说些什么</title>
+    <url>/2021/12/20/%E6%83%B3%E8%AF%B4%E4%BA%9B%E4%BB%80%E4%B9%88/</url>
+    <content><![CDATA[<p>我的知乎账号被封了，陪伴我7年的知乎账号被封了，大概是冲塔失败了，想了想，过去的知乎，我到底说了些什么，表达了什么？大概就是反讽了那个party和那个他吧。</p>
+<p>想说些什么，说些什么呢？我们这个社会还是需要反对的声音乃至错误的声音？！</p>
+]]></content>
+      <tags>
+        <tag>随笔</tag>
       </tags>
   </entry>
 </search>
