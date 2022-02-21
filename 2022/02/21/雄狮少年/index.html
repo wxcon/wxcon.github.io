@@ -20,28 +20,28 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"wxcon.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.7.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
-<meta name="description" content="以前都是用kibana查询ES数据的，但是环境没有了，只能用CURL查询了，记录下查询的操作：对应IP已混淆 1.查看版本 1curl  -XGET &amp;#x27;http:&#x2F;&#x2F;IP:9200&amp;#x27;  2.查看集群状态  1curl -XGET &amp;#x27;http:&#x2F;&#x2F;IP:9200&#x2F;_cluster&#x2F;state?pretty&amp;#x27;  3.查看所有索引信息  1curl -XGET &amp;">
+<meta name="description" content="这个周末，看了电影雄狮少年。我是在自己电脑上看的这部电影，这部电影上映的时候，朋友圈有人推荐这部电影，我没有去看，然后，也看到了网上说这部电影辱华的信息，对这部电影也更加的没有好感了，但是真正的看了这部电影，才觉得这确实是一部优秀的电影，至于有人说的辱华之类的，我觉得纯粹是子午须有。 电影是什么内容，我就不说了,百闻不如一见。人生就像一盒巧克力,你永远不知道下一颗是什么味道。人生就像一盒巧克力，你">
 <meta property="og:type" content="article">
-<meta property="og:title" content="查询ES数据">
-<meta property="og:url" content="https://wxcon.github.io/2021/11/18/%E6%9F%A5%E8%AF%A2ES%E6%95%B0%E6%8D%AE/index.html">
+<meta property="og:title" content="雄狮少年">
+<meta property="og:url" content="https://wxcon.github.io/2022/02/21/%E9%9B%84%E7%8B%AE%E5%B0%91%E5%B9%B4/index.html">
 <meta property="og:site_name" content="葱狗的唠叨">
-<meta property="og:description" content="以前都是用kibana查询ES数据的，但是环境没有了，只能用CURL查询了，记录下查询的操作：对应IP已混淆 1.查看版本 1curl  -XGET &amp;#x27;http:&#x2F;&#x2F;IP:9200&amp;#x27;  2.查看集群状态  1curl -XGET &amp;#x27;http:&#x2F;&#x2F;IP:9200&#x2F;_cluster&#x2F;state?pretty&amp;#x27;  3.查看所有索引信息  1curl -XGET &amp;">
+<meta property="og:description" content="这个周末，看了电影雄狮少年。我是在自己电脑上看的这部电影，这部电影上映的时候，朋友圈有人推荐这部电影，我没有去看，然后，也看到了网上说这部电影辱华的信息，对这部电影也更加的没有好感了，但是真正的看了这部电影，才觉得这确实是一部优秀的电影，至于有人说的辱华之类的，我觉得纯粹是子午须有。 电影是什么内容，我就不说了,百闻不如一见。人生就像一盒巧克力,你永远不知道下一颗是什么味道。人生就像一盒巧克力，你">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-11-18T15:14:57.000Z">
-<meta property="article:modified_time" content="2021-12-15T01:56:35.678Z">
+<meta property="article:published_time" content="2022-02-21T11:22:38.000Z">
+<meta property="article:modified_time" content="2022-02-21T11:27:59.474Z">
 <meta property="article:author" content="吴小聪">
-<meta property="article:tag" content="ES">
+<meta property="article:tag" content="电影">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://wxcon.github.io/2021/11/18/%E6%9F%A5%E8%AF%A2ES%E6%95%B0%E6%8D%AE/">
+<link rel="canonical" href="https://wxcon.github.io/2022/02/21/%E9%9B%84%E7%8B%AE%E5%B0%91%E5%B9%B4/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wxcon.github.io/2021/11/18/%E6%9F%A5%E8%AF%A2ES%E6%95%B0%E6%8D%AE/","path":"2021/11/18/查询ES数据/","title":"查询ES数据"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://wxcon.github.io/2022/02/21/%E9%9B%84%E7%8B%AE%E5%B0%91%E5%B9%B4/","path":"2022/02/21/雄狮少年/","title":"雄狮少年"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>查询ES数据 | 葱狗的唠叨</title>
+<title>雄狮少年 | 葱狗的唠叨</title>
   
 
 
@@ -134,7 +134,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -147,6 +147,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%99%E4%B8%AA%E5%91%A8%E6%9C%AB%EF%BC%8C%E7%9C%8B%E4%BA%86%E7%94%B5%E5%BD%B1%E9%9B%84%E7%8B%AE%E5%B0%91%E5%B9%B4%E3%80%82"><span class="nav-number">1.</span> <span class="nav-text">这个周末，看了电影雄狮少年。</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -204,7 +205,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://wxcon.github.io/2021/11/18/%E6%9F%A5%E8%AF%A2ES%E6%95%B0%E6%8D%AE/">
+    <link itemprop="mainEntityOfPage" href="https://wxcon.github.io/2022/02/21/%E9%9B%84%E7%8B%AE%E5%B0%91%E5%B9%B4/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -217,7 +218,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          查询ES数据
+          雄狮少年
         </h1>
 
         <div class="post-meta-container">
@@ -227,16 +228,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2021-11-18 23:14:57" itemprop="dateCreated datePublished" datetime="2021-11-18T23:14:57+08:00">2021-11-18</time>
+      <time title="创建时间：2022-02-21 19:22:38 / 修改时间：19:27:59" itemprop="dateCreated datePublished" datetime="2022-02-21T19:22:38+08:00">2022-02-21</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-12-15 09:56:35" itemprop="dateModified" datetime="2021-12-15T09:56:35+08:00">2021-12-15</time>
-      </span>
 
   
 </div>
@@ -248,35 +243,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>以前都是用kibana查询ES数据的，但是环境没有了，只能用CURL查询了，记录下查询的操作：<br>对应IP已混淆</p>
-<p>1.查看版本</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl  -XGET &#x27;http://IP:9200&#x27;</span><br></pre></td></tr></table></figure>
-
-<p>2.查看集群状态 </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -XGET &#x27;http://IP:9200/_cluster/state?pretty&#x27;</span><br></pre></td></tr></table></figure>
-
-<p>3.查看所有索引信息 </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -XGET &#x27;http://IP:9200/_cat/indices?pretty&amp;v&#x27;</span><br></pre></td></tr></table></figure>
-
-<p>4.查询某个index下的所有type </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -XGET &#x27;http://IP:9200/index/_mapping?pretty=trye</span><br></pre></td></tr></table></figure>
-
-
-
-<p>直接在浏览器界面查询也可以,更方便: </p>
-<p>1.查看版本 </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://IP:9200</span><br></pre></td></tr></table></figure>
-
-<p>2.查看集群状态 </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://IP:9200/_cat/health?v</span><br></pre></td></tr></table></figure>
-
-<p>3.查看所有索引信息 </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://IP:9200/_cat/indices?v</span><br></pre></td></tr></table></figure>
-
-<p>4.查询某个index下的所有type</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://IP:9200/index/_mapping?pretty=true</span><br></pre></td></tr></table></figure>
-<p>5.查询某个index下的某个字段 </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://IP:9200/index/_search?q=abcd:efgh </span><br></pre></td></tr></table></figure>
+        <h3 id="这个周末，看了电影雄狮少年。"><a href="#这个周末，看了电影雄狮少年。" class="headerlink" title="这个周末，看了电影雄狮少年。"></a>这个周末，看了电影雄狮少年。</h3><p>我是在自己电脑上看的这部电影，这部电影上映的时候，朋友圈有人推荐这部电影，我没有去看，然后，也看到了网上说这部电影辱华的信息，对这部电影也更加的没有好感了，但是真正的看了这部电影，才觉得这确实是一部优秀的电影，至于有人说的辱华之类的，我觉得纯粹是子午须有。 电影是什么内容，我就不说了,百闻不如一见。<br>人生就像一盒巧克力,你永远不知道下一颗是什么味道。人生就像一盒巧克力，你吃到嘴里了，才知道中意不中意。</p>
 
     </div>
 
@@ -286,20 +253,20 @@
 
     <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/ES/" rel="tag"># ES</a>
+              <a href="/tags/%E7%94%B5%E5%BD%B1/" rel="tag"># 电影</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/11/11/%E6%8A%95%E6%9C%BA%E7%9A%84%E5%8E%9F%E5%88%99/" rel="prev" title="投机的原则">
-                  <i class="fa fa-chevron-left"></i> 投机的原则
+                <a href="/2022/02/17/%E4%BA%BA%E7%94%9F/" rel="prev" title="人生">
+                  <i class="fa fa-chevron-left"></i> 人生
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/11/22/%E6%88%91%E7%9A%84%E5%89%8D%E5%8D%8A%E7%94%9F/" rel="next" title="我的前半生">
-                  我的前半生 <i class="fa fa-chevron-right"></i>
+                <a href="/2022/02/21/%E9%BB%84%E9%87%91%E6%97%B6%E4%BB%A3/" rel="next" title="黄金时代">
+                  黄金时代 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
